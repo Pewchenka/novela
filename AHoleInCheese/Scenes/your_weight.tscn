@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://b06scnojnedo1"]
+
+[ext_resource type="Script" path="res://Scenes/your_weightSC.gd" id="1_7cxyu"]
+[ext_resource type="Theme" uid="uid://3n0dhmuyonv8" path="res://style/Style.tres" id="2_s6cjg"]
+
+[node name="YourWeight" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7cxyu")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 83.0
+offset_right = 139.0
+offset_bottom = 31.0
+theme = ExtResource("2_s6cjg")
+text = "Ready"
+
+[node name="SpinBox" type="SpinBox" parent="."]
+layout_mode = 0
+offset_right = 83.0625
+offset_bottom = 31.0
+theme = ExtResource("2_s6cjg")
+alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

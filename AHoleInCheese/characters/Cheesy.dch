@@ -1,0 +1,50 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "3d",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "New_File"
+},
+"default_portrait": "Main",
+"description": "",
+"display_name": "Cheesy",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, -110),
+"portraits": {
+"Main": {
+"export_overrides": {
+"image": "\"res://Images/Cheesy1_0000s_0000_Слой-6.png\""
+},
+"ignore_char_scale": true,
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.3,
+"scene": ""
+},
+"Main2": {
+"export_overrides": {
+"image": "\"res://Images/Cheesy_0001s_0000_Слой-5.png\""
+},
+"ignore_char_scale": true,
+"mirror": false,
+"offset": Vector2(0, -100),
+"scale": 0.3,
+"scene": ""
+},
+"Test": {
+"export_overrides": {
+"image": ""
+},
+"ignore_char_scale": true,
+"mirror": false,
+"offset": Vector2(-80, -300),
+"scale": 0.3,
+"scene": "res://Scenes/cheesy_test.tscn"
+}
+},
+"scale": 1.0
+}

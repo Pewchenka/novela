@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cc6ovle3m7cpa"]
+
+[ext_resource type="Script" path="res://Scenes/cheesy_testS.gd" id="1_20y8w"]
+[ext_resource type="Texture2D" uid="uid://cmadwn21tkkv8" path="res://Images/Cheesy1_0000s_0000_Слой-6.png" id="1_y3mso"]
+
+[node name="CanvasGroup" type="CanvasGroup"]
+script = ExtResource("1_20y8w")
+
+[node name="Base" type="Sprite2D" parent="."]
+texture = ExtResource("1_y3mso")
+centered = false

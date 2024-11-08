@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cu8qktrkqu2kq"]
+
+[ext_resource type="Texture2D" uid="uid://4r66oa22bnbm" path="res://Images/Cheese/Holes/Holes_0002_Слой-5.png" id="1_pmex8"]
+
+[node name="Hole2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_pmex8")

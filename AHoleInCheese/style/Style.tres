@@ -1,0 +1,18 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://3n0dhmuyonv8"]
+
+[ext_resource type="StyleBox" uid="uid://cijld0btugak1" path="res://style/2new_style_box_texture.tres" id="1_324pc"]
+[ext_resource type="StyleBox" uid="uid://cvk2iggwdaxpd" path="res://style/new_style_box_texture.tres" id="2_1idma"]
+[ext_resource type="StyleBox" uid="uid://bakirfmq647g8" path="res://style/1new_style_box_texture.tres" id="3_uou5p"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_8xqbj"]
+
+[resource]
+Button/styles/disabled = ExtResource("1_324pc")
+Button/styles/focus = ExtResource("1_324pc")
+Button/styles/hover = ExtResource("1_324pc")
+Button/styles/normal = ExtResource("2_1idma")
+Button/styles/pressed = ExtResource("3_uou5p")
+Label/styles/normal = ExtResource("2_1idma")
+LineEdit/styles/focus = ExtResource("3_uou5p")
+LineEdit/styles/normal = ExtResource("2_1idma")
+SpinBox/icons/updown = SubResource("ImageTexture_8xqbj")

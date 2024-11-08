@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://i8ubmrsl57xd"]
+
+[ext_resource type="Script" path="res://Scenes/Main.gd" id="1_aum8g"]
+[ext_resource type="Texture2D" uid="uid://bt05rmv3mdjhj" path="res://Images/AHoleInCheese_0006.png" id="2_3xne0"]
+[ext_resource type="Script" path="res://Scenes/ParallaxBackground.gd" id="3_unep2"]
+[ext_resource type="Texture2D" uid="uid://0jeodsl4s6b1" path="res://Images/AHoleInCheese_0002_Слой-3.png" id="4_vkvkv"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_aum8g")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("3_unep2")
+
+[node name="BackgroundP" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(360, 240)
+motion_scale = Vector2(0, 0)
+motion_mirroring = Vector2(720, 480)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/BackgroundP"]
+texture = ExtResource("2_3xne0")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+motion_mirroring = Vector2(720, 480)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture_filter = 1
+texture = ExtResource("4_vkvkv")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0

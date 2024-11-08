@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dtm6e3xrl2j22"
+
+[deps]
+
+files=["res://language/dialogic_character_translations.ru.translation"]
+
+source_file="res://language/dialogic_character_translations.csv"
+dest_files=["res://language/dialogic_character_translations.ru.translation"]
+
+[params]
+
+compress=true
+delimiter=0

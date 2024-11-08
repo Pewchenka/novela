@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://ymletyf8it1e"]
+
+[ext_resource type="Script" path="res://Scenes/ammount_holes.gd" id="1_40yhq"]
+[ext_resource type="Theme" uid="uid://3n0dhmuyonv8" path="res://style/Style.tres" id="2_d7cxs"]
+
+[node name="AmmountHole" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_40yhq")
+
+[node name="SpinBox" type="SpinBox" parent="."]
+layout_mode = 1
+offset_right = 67.063
+offset_bottom = 31.0
+theme = ExtResource("2_d7cxs")
+max_value = 1e+09
+alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 67.0
+offset_right = 123.0
+offset_bottom = 31.0
+theme = ExtResource("2_d7cxs")
+text = "Ready"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://c25fm00qjyx5p"]
+
+[ext_resource type="Script" path="res://Node2DnewMain.gd" id="1_yi55p"]
+[ext_resource type="Script" path="res://Scenes/ParallaxBackgroundSCriptNew.gd" id="2_buavw"]
+[ext_resource type="Texture2D" uid="uid://bt05rmv3mdjhj" path="res://Images/AHoleInCheese_0006.png" id="3_hwxus"]
+[ext_resource type="Texture2D" uid="uid://0jeodsl4s6b1" path="res://Images/AHoleInCheese_0002_Слой-3.png" id="4_ekygd"]
+[ext_resource type="PackedScene" uid="uid://cw2ru2etbd3sb" path="res://Scenes/settings.tscn" id="5_hhhmn"]
+[ext_resource type="AudioStream" uid="uid://rjdfswdor1ma" path="res://Sounds/AHoleInCheese.wav" id="6_ssnke"]
+
+[node name="NewMain" type="Node2D"]
+script = ExtResource("1_yi55p")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("2_buavw")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+motion_mirroring = Vector2(720, 480)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("3_hwxus")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(720, 480)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource("4_ekygd")
+centered = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+layer = 5
+
+[node name="Settings" parent="CanvasLayer" instance=ExtResource("5_hhhmn")]
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_ssnke")
+autoplay = true
+
+[connection signal="finished" from="Music" to="." method="_on_music_finished"]

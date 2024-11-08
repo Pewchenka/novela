@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://cijld0btugak1"]
+
+[ext_resource type="Texture2D" uid="uid://c3cu8nqawgvh0" path="res://Images/AHoleInCheese_0004.png" id="1_n73sr"]
+
+[resource]
+texture = ExtResource("1_n73sr")
+texture_margin_left = 1.0
+texture_margin_top = 1.0
+texture_margin_right = 1.0
+texture_margin_bottom = 1.0
+modulate_color = Color(0.419608, 0.454902, 0.643137, 0.47451)
